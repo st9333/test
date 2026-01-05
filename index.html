@@ -1,7 +1,311 @@
+
+<!doctype html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, height=device-height, initial-scale=1.0; user-scalable=no;' />
+<title>XG mobile</title>
+<script type='text/javascript' >
+window.addEventListener('load', function(){   setTimeout(scrollTo, 0, 0, 1); }, false);
+</script>
+
+
+<LINK rel=stylesheet type=text/css href='index.css'>
+<style>
+	.worldtime {
+MARGIN-TOP: 0px; PADDING-RIGHT: 5px; COLOR: #ddd; FONT-SIZE: 12px; 
+}
+
+.worldtime1 {
+  MARGIN-TOP: 0px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; COLOR: #fff; FONT-SIZE: 12px; FONT-WEIGHT: normal;
+  background-color:#ccc; font-family:나눔고딕, NanumGothic, '맑은 고딕', 'Malgun Gothic', 돋움, Dotum, 굴림, Gulim, Helvetica, sans-serif;
+  }
+</style>
+</head>
+<body style=background-color:black>
+<div class='div_top1'>
 <center>
-테스트 페이지ss<br><br><br><br>
-<img src=https://img.kr.gcp-karroter.net/origin/article/202512/1765874886114a2539131c7f89d330684c484ed64b660e51f024414100a33930d9338ea7091f40.webp?f=webp&q=95&s=720x720&t=inside>
+<a href='./index2.php' style='FONT-SIZE: 15px; color:white;'>
+7234 ° 124.55.96.182         <script language="javascript">
+<!--
+
+     var i =0;
+
+     var time_set="";
+
+     var c_infos = new Array();
+     var c_date = new Array();
+     var c_time = new Array();
+     
+
+     function getTime(){
+          i = i+1;
+
+          if(time_set == "" ){
+               var _src = document.getElementById("time_area").innerHTML ;
+               c_infos = _src.split(" ");
+               //alert(c_infos[0] +" / "+ c_infos[1]);
+
+               c_date = c_infos[0].split("-");
+               c_time = c_infos[1].split(":");
+          }
+          isss = i+" &gt ;"+c_date[0]+"-"+c_date[1]+"-"+c_date[2];
+
+          isss +=" "+ c_time[0]+":"+c_time[1]+":"+c_time[2];
+          document.getElementById("time_test").innerHTML += isss;
+          var sdate = new Date(c_date[0],c_date[1]-1,c_date[2],c_time[0],c_time[1],c_time[2]);
+          sdate.setSeconds(sdate.getSeconds()+1);
+          c_date[0]=sdate.getFullYear();
+          c_date[1]=sdate.getMonth()+1;
+          c_date[2]=sdate.getDate();
+          c_time[0]=sdate.getHours();
+          c_time[1]=sdate.getMinutes();
+          c_time[2]=sdate.getSeconds();
+          var ww="";
+          switch(sdate.getDay()){
+               case 0 : ww = "日"; break;
+               case 1 : ww = "月"; break;
+               case 2 : ww = "火"; break;
+               case 3 : ww = "水"; break;
+               case 4 : ww = "木"; break;
+               case 5 : ww = "金"; break;
+               case 6 : ww = "土"; break;
+          }
+          var yy =  c_date[0];	
+          var mm = c_date[1]<10 ? "0"+c_date[1] : c_date[1];
+          var dd = c_date[2]<10 ? "0"+c_date[2] : c_date[2];
+          var h = c_time[0]<10 ? "0"+c_time[0] : c_time[0];
+          var m = c_time[1]<10 ? "0"+c_time[1] : c_time[1];
+          var s = c_time[2]<10 ? "0"+c_time[2] : c_time[2];
+  
+
+          time_set = "KST : "+yy+"/"+mm+"/"+dd+"("+ww+") "+h+':'+m+':'+s;
+          return time_set;
+     }
+     function set_Time(){
+          var time_txt = document.getElementById("time_area");
+          time_txt.innerHTML = getTime() ;
+        oop = setTimeout("set_Time()", 1000);
+     }
+
+     //-->
+</script>
+<span id=time_area style=display:none>2026-01-06 03:56:16</span>
+<!--<span class='worldtime1' title='-8,중앙유럽,프랑스'>CET</span><span id=time_area class='worldtime'>0105 19:56</span>-->
+<span class='worldtime1' title='한국'>KST</span><span id=time_area class='worldtime'>0106 03:56:16</span>
+<a href='#' title='' onclick="clearTimeout(oop)"></a>
+<div  style=display:none>최초시간 : 2026-01-06 03:56:16</div>
+<div id=time_test style=display:none></div>
+</a>
+</center>
+</div>
+<div class=nv_fvsv_header>
+<!-- 오늘 나의 불행은 언젠가 내가 잘못 보낸 시간의 보복이다
+남과 똑같이 해서는 절대 노력 했다고 할 수 없다	
+
+
+
+시간을 달리 쓰는것, 사는 곳을 바꾸는 것, 새로운 사람을 사귀는 것
+<br>'새로운 결심을 하는 것'은 가장 무의미하다
+
+
+뜬구름같은 인생에서 우연히 반나절 한가함을 얻는다
+창조하라. 느껴라. 믿어라. 표현하라. 전념하라. 맞서라. 외쳐라.
+
+인간의 욕심은 끝이 없고 같은 실수를 반복한다.
+
+
+워리어가 되어라. 어떤 고난이 닥쳐도 <br>
+네가 포위 됐다 생각 될 땐... 이제 어느 방향으로도 공격 할 수 있다고 생각해라 hongPD
+
+버려라!   놓아라!   그리고 비워라!
+
+
+ <span style='color:#3588c2;'>
+다 좋은데, 길게 보면 인생 어떻게 될지 잘 모른다. 좋게 보고 사는 것이 좋다.
+
+-->
+
+
+ </span>
+</div>
+<div class=xg_guide_a>
+
+ <A class='cel_green1' href='https://docs.google.com/forms/d/e/1FAIpQLSeZbpn7Vwbj_vAsUfK5yXy8LySwNRO8dZAeHxI0kOFp4032rw/viewform?usp=send_form'>D3</A>
+ <a href='https://docs.google.com/forms/d/e/1FAIpQLSfRh976NXYuF6o-5dmFGED3P6jSi23Uv1nyVX0nDSJYQxvhvA/viewform' class='cel_yel'>카</a>
+  <a href='https://docs.google.com/forms/d/e/1FAIpQLSfi4CbzSz58-PhUrUp11D3qRNx0Jz14uMGfWx1yA3sMOY2teA/viewform?usp=sf_link' class='cel_yel'>워킹</a>
+ <a class='nv_fot_pb' href=http://flx.ncity.net/m/>flxM</a> |
+ <a class='nv_fot_pb' href='https://docs.google.com/spreadsheets/d/10HK3KQB7ECjG1ebxCAe9kPXWKLOCrLxCEqIXZSiqM1s/edit#gid=0'>웤</a> |
+ <a class='nv_fot_pb' href='http://google.com/maps/'>맵</a> |
+ <A class='cel_pink' href='http://100.100.1.11'>1.11</A>
+  <A class='cel_pink' href='http://192.168.0.1'>0.1</A>
+ <br>
+ <A class='cel_pink' href='http://apapap.iptime.org:8881'>라웉1</A>
+  <A class='cel_pink' href='http://apapap.iptime.org:8882'>라웉2</A>
+ <A class='cel_pink' href='http://xg.ipdisk.co.kr:441'>나스</A>
+ <A class='cel_pink' href='../up/'>UP</A>
+ <A class='cel_pink' href='../up/v.php'>업뷰</A>
+ <A class='cel_pink' href='../v.php'>뷰</A>
+ <A class='cel_pink' href='./p_money.htm'>가계</A>
+ <br>
+ <a class='nv_fot_pa' href='https://m.dhlottery.co.kr/myPage.do?method=lottoBuyListView'>520</a> 
+
+ <span  class='nv_fot_pa'>
+ <a class='nv_fot_pb' href=http://m.news.naver.com>네이버</a> |
+ <a class='nv_fot_pb' href=http://m.naver.com>홈</a> |
+ <a class='nv_fot_pb' href='http://m.news.naver.com/newspaperHome.nhn'>면</a>
+ </span>
+ <span  class='nv_fot_pa'>
+ <a class='nv_fot_pb' href=http://m.finance.daum.net/m/news/news_list.daum?type=main>다음</a>
+ </span>
+ <a href='http://m.mediatoday.co.kr/news/articleList.html' class='nv_fot_pa'>미오</a> 
+
+ <br>
+
+ <a href=http://m.ppomppu.co.kr/new/bbs_list.php?id=phone class='nv_fot_pa' >뽐ㅃ</a>
+ <a href='http://www.ddanzi.com/hot_all' class='nv_fot_pa' >딴자</a>
+ <a href='https://www.liivm.com/change/rateplan/rateplan/searchRatePlan' class='nv_fot_pa' >리브M</a>
+
+
+ <br>
+ 
+ <A class='cel_green2' href='http://m.search.naver.com/search.naver?query=달력'>달력</A>
+<A class='cel_green2' href='./p_gif100m.htm'>100MB</A>
+
+<A class='cel_green2' href='https://www.youtube.com/live/m1ZCtzgoXHU'>UN빌리지</a>
+<A class='cel_green2' href='https://www.youtube.com/watch?v=uOLxM77QWFw'>KT</a>
+
+
+ <br>
+ <A class='cel_pink' href='https://nara-speller.co.kr/speller'>맞춤법</A>
+ <A class='cel_pink' href='http://translate.google.com'>번역</A>
+
+ <A class='cel_pink' href='http://ip.uppie.net/'>IPIP</A>
+  <A class='cel_pink' href='http://c11.kr' alt='xg두글자 얼류거'>XG류거.짧U</A> 
+  <A class='cel_pink' href='https://imgbb.com' alt='업로드'>이미지업</A> 
+
+
+<br><!--주메뉴 별도 추출 200909 -->
+ <!-----------------라인1----------------->
+ <span  class='xg_guide_fot_pa'>
+ <a class='nv_fot_pb' href='https://m.search.daum.net/search?nil_profile=btn&w=tot&DA=SBC&q=%EC%A0%84%EA%B3%A1+%EB%82%A0%EC%94%A8' >날씨</a> |
+ <a class='nv_fot_pb' href='p_windy.htm'>Rain</a> |
+ <a class='nv_fot_pb' href='http://aqicn.org/map/korea/gyeonggi/yeoncheon-gun/m/'>미세</a> |
+ <a class='nv_fot_pb' href='http://manaru.com/000.htm'>해상</a>
+
+ </span> |
+ <A class='xg_guide_fot_pa' href='https://m.stock.naver.com/news/index.nhn?category=flashnews'>뉴스N</A> |
+ <A class='xg_guide_fot_pa' href='https://news.daum.net/'>뉴쓰D</A> |
+
+
+<br>
+ <!-----------------라인2----------------->
+ <A class='xg_guide_fot_pa' href='https://m.clien.net/service/'>클량</A> |
+ <A class='xg_guide_fot_pa' href='http://m.slrclub.com/l/used_market'>클터</A> |
+ <A class='xg_guide_fot_pa' href='https://www.band.us/band/83426043?referrer='>둥이네</A> |
+  <a href='http://blog.naver.com/darksun1998' class='xg_guide_fot_pa' >황약</a> |
+ <!--올드 http://blog.naver.com/darksun1998-->
+ <A class='xg_guide_fot_pa' href='http://m.stock.naver.com/sise/siseList.nhn?menu=top_search&sosok=2#siseMenuList'>인기</A>
+<br>
+ <!-----------------라인3----------------->
+  <span  class='xg_guide_fot_pa'>
+ <A class='nv_fot_pb'  href='https://m.cafe.naver.com/ca-fe/allfm01'>EV</A>  |
+  <A class='nv_fot_pb'  href='https://m.cafe.naver.com/ca-fe/allfm01?tab=popular'>인기</A>
+ </span> 
+
+ <A class='xg_guide_fot_pa' href='https://m.cafe.naver.com/ca-fe/web/cafes/10050146/members/iohZ5dI2sdZt8CNW_n8JqFuLT8vr8cY8vBgICNcbZJc/'>중나</A>
+  <A class='xg_guide_fot_pa' href='https://m.cafe.naver.com/droneracer'>DRC</A> |
+ <A class='xg_guide_fot_pa' href='https://m.cafe.naver.com/ca-fe/allcnc'>CNC</A>
+
+
+
+
+ </div>
+<div class=xg_guide_a>
+	 <a href=p_search.php class='cel_blue' style='width:91%;'>검 to the 색</a>
+</div>
+<hr>
+<div class=xg_guide><center>
+ <a href=https://blog.naver.com/designpress2016 class='xg_guide_fot_pa'>n디자인</a>
+ <a href=https://magazine.brique.co/ class='xg_guide_fot_pa'>brique</a>
+ <a href=http://trivia.tistory.com/m class='xg_guide_fot_pa'>triv</a>
+ <a href=http://blog.naver.com/fairan34 class='xg_guide_fot_pa'>이영기</a>
+ <a href=http://photohistory.tistory.com class='xg_guide_fot_pa'>사권</a>
+ <a href=http://goo.gl/hrjDY4 class='xg_guide_fot_pa'>LeeSM</a>
+
+ 
+
+ <a href= http://blog.naver.com/mmj2006/ class='xg_guide_fot_pa'>서빈D50</a>
+
+ <a href=http://blog.naver.com/k1day class='xg_guide_fot_pa'>k1day</a>
+ <a href=http://xungnux.wordpress.com class='xg_guide_fot_pa'>WP</a>
+
+
+ <a href='http://m.navercast.naver.com/magazine_home.nhn?viewType=thumbnail' class='xg_guide_fot_pa'>N.mag</a>
+
+<div class='part_a'>
+그린ALP
+<a  class='cel_green2' href='https://www.greenalp.com/RealTimeTracker/index.php?guestmode=1&viewuser=addflight'>addflight</a>
+<a  class='cel_green2' href='https://www.greenalp.com/RealTimeTracker/index.php?guestmode=1&viewuser=oopspd'>Ops</a>
+<br><br>
+
+<!--업무용-->
+<A class='cel_green2' href='./p_fl.htm'>화각</A> 
+<A class='cel_green2' href='./p_fl_alt.htm'>고도</A> 
+<A class='cel_green2' href='./p_tan.htm'>TAN</A> 
+<br><br>
+<a  class='cel_green2' href='./p_time_dstc.htm'>타이머</a>
+<A class='cel_green2' href='./p_WHratio.htm'>WH비율</A> 
+
+<A class='cel_green2' href='./p_color.htm'>색상</A> 
+
+
+
+</div>
 
 
 
 </center>
+
+<br>
+° · ‥ … ‘ “ <br>
+∵ ∴ ° ′ ″ ℃ <br>
+●★◆□◇○☆▽△▲▼■<br>
+████████████
+<br>
+JAN/FEB/MAR/APR<br>
+MAY/JUN/JUL/AUG<br>
+SEP/OCT/NOV/DEC
+
+
+<br>1ft=30.48 cm
+<br>1mile=1.61 km
+<br>1lb = 454 g
+<br>1oz = 28 g
+<br>1gallon = 3.79 L
+<br>1knot = 1.85 Km/h
+
+<br><br><br><br><br><br><br>
+<div class=xg_guide_a>
+	 <a href=p_inspire.php class='cel_yel' style=width:95%;background-color:#0887e8>In</a>
+</div>
+<div class=xg_guide_a>
+	 <a href=ex_insp.php class='cel_yel' style=width:95%;background-color:#0887e8>Insp</a>
+</div>
+</div>
+<!--올드링크
+ <a href='http://fox.gemizip.com/etrade/search_02_r.htm' class='nv_fot_pa' >평균</a>
+
+
+
+//올드링크-->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ <a class=hid href=http://xung.net/x/p_index11.htm>p11 |</a>
+ <a class=hid href=http://flx.ncity.net/st/121006-npHousemaid/00.htm>p하녀 |</a>
+<? /* 로그분석 */ ?>
+<!--<img src=http://goo.gl/xaqvu width=0 height=0 border=0> -->
+<!--네이버-->
+<script type='text/javascript' src='http://wcs.naver.net/wcslog.js'></script> <script type='text/javascript'> if(!wcs_add) var wcs_add = {}; wcs_add['wa'] = 'a05d7f9966fc30'; wcs_do(); </script>
+<? /* /로그분석 */ ?>
+</body>
+</html>
